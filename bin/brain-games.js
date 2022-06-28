@@ -1,3 +1,4 @@
 #!/usr/bin/env node
-import greetinUserName from '../src/cli.js';
+import UserName from '../src/cli.js';
 
+UserName;
