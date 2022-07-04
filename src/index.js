@@ -14,7 +14,8 @@ const gameEngine = (gameRule, gameRound) => {
     if (rightAnswer === userAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'\nLet's try again ${UserName}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'`);
+      console.log(`Let's try again ${UserName}!`);
       return;
     }
   }
