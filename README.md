@@ -1,7 +1,8 @@
 <h2> Hexlet tests and linter status:</h2><br>
 <a href="https://codeclimate.com/github/KiraBelo/frontend-project-lvl1/maintainability">
 <img src="https://api.codeclimate.com/v1/badges/59d8475196089f39db8b/maintainability"></a><br>
-[![hexlet-check](https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg?branch=main)](https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/hexlet-check.yml)
+<a href="https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/hexlet-check.yml">
+<img src="https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg"></a>
 
 <h2> About</h2><br>
 5 math mini-games. You need three correct answer to win.
