@@ -24,5 +24,5 @@ const gameRound = () => {
   const question = progression.join(' ');
   return [question, rightAnswer];
 };
-const brainProgression = () => gameEngine(gameRule, gameRound);
-export default brainProgression;
+const startGame = () => gameEngine(gameRule, gameRound);
+export default startGame;

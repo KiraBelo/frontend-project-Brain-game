@@ -18,5 +18,5 @@ const gameRound = () => {
   return [question, rightAnswer];
 };
 
-const brainPrime = () => gameEngine(gameRule, gameRound);
-export default brainPrime;
+const startGame = () => gameEngine(gameRule, gameRound);
+export default startGame;
