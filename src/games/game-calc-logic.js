@@ -1,8 +1,8 @@
 import randomNumber from '../randomNumber.js';
 import randomSign from '../randOperation.js';
-import gameEngine from '../index.js';
+import play from '../index.js';
 
-const gameRule = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 const calculator = (number1, sign, number2) => {
   switch (sign) {
     case '+':
@@ -16,7 +16,7 @@ const calculator = (number1, sign, number2) => {
   }
 };
 
-const gameRound = () => {
+const generateRound = () => {
   const number1 = randomNumber(1, 50);
   const number2 = randomNumber(1, 50);
   const sign = randomSign(['*', '-', '+']);
@@ -25,5 +25,5 @@ const gameRound = () => {
   return [question, rightAnswer];
 };
 
-const startGame = () => gameEngine(gameRule, gameRound);
+const startGame = () => play(description, generateRound);
 export default startGame;

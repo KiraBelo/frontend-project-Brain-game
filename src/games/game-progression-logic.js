@@ -1,7 +1,7 @@
 import randomNumber from '../randomNumber.js';
-import gameEngine from '../index.js';
+import play from '../index.js';
 
-const gameRule = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 const makeProgression = (startProgression, progressionStep, progressionLength) => {
   const arr = [];
   for (let i = 0; i <= progressionLength; i += 1) {
@@ -11,7 +11,7 @@ const makeProgression = (startProgression, progressionStep, progressionLength) =
   return arr;
 };
 
-const gameRound = () => {
+const generateRound = () => {
   const step = randomNumber(2, 13);
   const randomLength = randomNumber(10, 13);
   const firstNumber = randomNumber(1, 15);
@@ -24,5 +24,5 @@ const gameRound = () => {
   const question = progression.join(' ');
   return [question, rightAnswer];
 };
-const startGame = () => gameEngine(gameRule, gameRound);
+const startGame = () => play (description, generateRound);
 export default startGame;
