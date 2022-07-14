@@ -24,5 +24,5 @@ const generateRound = () => {
   const question = progression.join(' ');
   return [question, rightAnswer];
 };
-const startGame = () => play (description, generateRound);
+const startGame = () => play(description, generateRound);
 export default startGame;
