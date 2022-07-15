@@ -2,10 +2,10 @@ import randomNumber from '../randomNumber.js';
 import play from '../index.js';
 
 const description = 'What number is missing in the progression?';
-const makeProgression = (startProgression, progressionStep, progressionLength) => {
+const createProgression = (firstNumber, step, length) => {
   const arr = [];
-  for (let i = 0; i <= progressionLength; i += 1) {
-    const result = startProgression + (i * progressionStep);
+  for (let i = 0; i <= length; i += 1) {
+    const result = firstNumber + (i * step);
     arr.push(result);
   }
   return arr;
@@ -16,7 +16,7 @@ const generateRound = () => {
   const randomLength = randomNumber(10, 13);
   const firstNumber = randomNumber(1, 15);
 
-  const progression = makeProgression(firstNumber, step, randomLength);
+  const progression = createProgression(firstNumber, step, randomLength);
   const randomIndex = randomNumber(0, progression.length - 1);
 
   const rightAnswer = `${progression[randomIndex]}`;
