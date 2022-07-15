@@ -19,9 +19,9 @@ const generateRound = () => {
   const progression = createProgression(firstNumber, step, randomLength);
   const randomIndex = randomNumber(0, progression.length - 1);
 
-  const rightAnswer = `${progression[randomIndex]}`;
-  progression[randomIndex] = '..';
+  const removed = progression.splice(randomIndex, 1, '..');
   const question = progression.join(' ');
+  const rightAnswer = String(removed);
   return [question, rightAnswer];
 };
 const startGame = () => play(description, generateRound);
