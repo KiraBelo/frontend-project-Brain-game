@@ -13,7 +13,7 @@ const generateRound = () => {
   const number1 = randomNumber(1, 50);
   const number2 = randomNumber(1, 50);
   const question = `${number1} ${number2}`;
-  const rightAnswer = `${getGcd(number1, number2)}`;
+  const rightAnswer = getGcd(number1, number).toString;
   return [question, rightAnswer];
 };
 
