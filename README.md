@@ -3,6 +3,8 @@
 <img src="https://api.codeclimate.com/v1/badges/59d8475196089f39db8b/maintainability"></a><br>
 <a href="https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/hexlet-check.yml">
 <img src="https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg"></a>
+<a href="https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/nodejs.yml">
+<img src="https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg"></a>
 
 <h2> About</h2><br>
 5 math mini-games. You need three correct answer to win.
