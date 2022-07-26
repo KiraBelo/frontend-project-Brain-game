@@ -1,4 +1,4 @@
-import randomNumber from '../randomNumber.js';
+import getRandomNumber from '../utils.js';
 import play from '../index.js';
 
 const description = 'What number is missing in the progression?';
@@ -12,12 +12,12 @@ const createProgression = (firstNumber, step, length) => {
 };
 
 const generateRound = () => {
-  const step = randomNumber(2, 13);
-  const randomLength = randomNumber(10, 13);
-  const firstNumber = randomNumber(1, 15);
+  const step = getRandomNumber(2, 13);
+  const randomLength = getRandomNumber(10, 13);
+  const firstNumber = getRandomNumber(1, 15);
 
   const progression = createProgression(firstNumber, step, randomLength);
-  const randomIndex = randomNumber(0, progression.length - 1);
+  const randomIndex = getRandomNumber(0, progression.length - 1);
 
   const removed = progression.splice(randomIndex, 1, '..');
   const question = progression.join(' ');
