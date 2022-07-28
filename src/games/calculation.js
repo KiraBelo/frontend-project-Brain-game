@@ -6,7 +6,7 @@ const minRange = 1;
 const maxRange = 50;
 const operators = ['*', '-', '+'];
 
-const operation = (x, operator, y) => {
+const operation = (x, y, operator) => {
   switch (operator) {
     case '+':
       return x + y;
@@ -15,7 +15,7 @@ const operation = (x, operator, y) => {
     case '*':
       return x * y;
     default:
-      return null;
+      throw new Error(`Unknown operator: '${operator}'!`);
   }
 };
 const generateRound = () => {
@@ -23,7 +23,7 @@ const generateRound = () => {
   const number2 = getRandomNumber(minRange, maxRange);
   const operator = operators[getRandomNumber(0, operators.length - 1)];
   const question = `${number1} ${operator} ${number2}`;
-  const rightAnswer = operation(number1, operator, number2).toString();
+  const rightAnswer = String(operation(number1, number2, operator));
   return [question, rightAnswer];
 };
 
