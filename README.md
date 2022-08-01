@@ -1,5 +1,5 @@
  # Brain-games 
-[![](https://api.codeclimate.com/v1/badges/59d8475196089f39db8b/maintainability)](https://codeclimate.com/github/KiraBelo/frontend-project-lvl1/maintainability)  [![](https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/hexlet-check.yml)  [![](https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)](https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/nodejs.yml)
+[![](https://api.codeclimate.com/v1/badges/59d8475196089f39db8b/maintainability)](https://codeclimate.com/github/KiraBelo/frontend-project-lvl1/maintainability)  [![](https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/hexlet-check.yml) [![esLint](https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)](https://github.com/KiraBelo/frontend-project-lvl1/actions/workflows/nodejs.yml)
 
 ## About
 5 math mini-games. You need three correct answer to win.
