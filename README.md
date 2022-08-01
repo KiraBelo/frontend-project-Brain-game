@@ -5,29 +5,29 @@
 5 math mini-games. You need three correct answer to win.
 
 ## Install
-*   Enter command to check update 
+1. Enter command to check update 
 ```
 apt update
 ```
-* Install [Node.js](https://nodejs.org/en/download/)
-* Enter  command to update Node.
+2. Install [Node.js](https://nodejs.org/en/download/)
+3. Enter  command to update Node.
 ```
 apt upgrade nodejs
 ```
-*   Enter command to install Npm package.
+4. Enter command to install Npm package.
 ```
 apt install npm
 ```
-*   Clone the repository.
-*   Enter command to add dependencies.
+5. Clone the repository.
+6. Enter command to add dependencies.
 ```
 npm i
 ```
-* Enter command for short game call
+7. Enter command for short game call
 ```
 npm link
 ```
-*  Congrats! Enter the name of the game, for example "brain-even".
+8. Congrats! Enter the name of the game, for example "brain-even".
 
 ## Games
 *   brain-even
