@@ -6,7 +6,7 @@ const minRange = 1;
 const maxRange = 50;
 const operators = ['*', '-', '+'];
 
-const operation = (x, y, operator) => {
+const calculate = (x, y, operator) => {
   switch (operator) {
     case '+':
       return x + y;
@@ -23,7 +23,7 @@ const generateRound = () => {
   const number2 = getRandomNumber(minRange, maxRange);
   const operator = operators[getRandomNumber(0, operators.length - 1)];
   const question = `${number1} ${operator} ${number2}`;
-  const rightAnswer = String(operation(number1, number2, operator));
+  const rightAnswer = String(calculate(number1, number2, operator));
   return [question, rightAnswer];
 };
 
