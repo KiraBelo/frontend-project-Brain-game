@@ -23,8 +23,8 @@ const generateRound = () => {
   const length = getRandomNumber(minLength, maxLength);
   const firstNumber = getRandomNumber(minRange, maxRange);
   const progression = createProgression(firstNumber, step, length);
-  const randomIndex = getRandomNumber(0, progression.length - 1);
-  const removed = progression.splice(randomIndex, 1, '..');
+  const index = getRandomNumber(0, progression.length - 1);
+  const removed = progression.splice(index, 1, '..');
   const question = progression.join(' ');
   const rightAnswer = String(removed);
   return [question, rightAnswer];
